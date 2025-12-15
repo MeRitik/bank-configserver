@@ -24,3 +24,7 @@ spring:
 #        native:
 #          search-locations: "file:///C:/config"
 #          search-locations: "classpath:/config"
+
+
+encrypt:
+  key: "mySuperSecretKey123"
