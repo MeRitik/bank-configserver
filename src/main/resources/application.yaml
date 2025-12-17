@@ -9,7 +9,11 @@ spring:
     active: git
   # active: native
 
-  git:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 
   cloud:
@@ -28,3 +32,9 @@ spring:
 
 encrypt:
   key: "mySuperSecretKey123"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
